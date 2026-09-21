@@ -1,0 +1,10 @@
+name: binder-env
+channels:
+ - conda-forge 
+dependencies:
+ - python=3.11
+ - fortran-compiler # installs gfortran
+ - make
+ - pkg-config # optional, if needed for detection
+ - netcdf-fortran
+ - eccodes=2.35.0

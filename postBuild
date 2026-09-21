@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# Download ERA5 data
+DATA_DIR="$HOME/input/"
+mkdir -p "$DATA_DIR"
+wget -r -nd --no-parent -A EA* -R index.html -P "$DATA_DIR" https://webdata.wolke.img.univie.ac.at/scratch/ERA5/
