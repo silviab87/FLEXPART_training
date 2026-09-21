@@ -1,10 +1,22 @@
 name: binder-env
+
 channels:
- - conda-forge 
+  - conda-forge
+
 dependencies:
- - python=3.11
- - fortran-compiler # installs gfortran
- - make
- - pkg-config # optional, if needed for detection
- - netcdf-fortran
- - eccodes=2.35.0
+  - python=3.11
+
+  # FLEXPART
+  - fortran-compiler
+  - make
+  - pkg-config
+  - netcdf-fortran
+  - eccodes=2.35.0
+
+  # Python analysis
+  - numpy
+  - pandas
+  - matplotlib
+  - xarray
+  - netcdf4
+  - cartopy
